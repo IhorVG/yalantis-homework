@@ -53,21 +53,21 @@ if __name__ == "__main__":
           3) Whether 2 lines s1, s2 consist of the same characters  -- Press 3
           4) Sorted of tuple -- Press 4
           """)
-    n = int(input('Choose: [1-4]'))
-    if n == 1:
+    k = int(input('Choose: [1-4]'))
+    if k == 1:
         test_string = input('Input your text: ')
         new_text = remove_extra_spaces(test_string)
         print(f'Your text after action of function: {new_text}')
-    elif n == 2:
+    elif k == 2:
         test_string = input('Input your text: ')
         new_text=find_most_offen_word(test_string)
         print(f'Your text after action of function: {new_text}')
-    elif n == 3:
+    elif k == 3:
         test_string1 = input('Input first text: ')
         test_string2 = input('Input second text: ')
         flags_same = samechars(test_string1,test_string2)
         print(f'Your text after action of function: {flags_same}')
-    elif n == 4:
+    elif k == 4:
         result = sorted_tuple()
         print(f'Sorted tuple over sum of elements: {result}')
     else:
